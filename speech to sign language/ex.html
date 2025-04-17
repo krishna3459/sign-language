@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<div id="bg"> 
+<head>
+  <div id="title">
+  <title>SPEECH TO SIGN LANGUAGE TRANSLATOR</title>
+  <p class="fonting"><b>SPEECH TO SIGN LANGUAGE TRANSLATOR</b></p>
+  <link rel="stylesheet" href="style.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Speech to Symbol</title>   
+</div>
+</head>
+
+
+<body>  
+
+ 
+  <div  id="lang-translation-input">
+    <label for="translatedLang" class="custom-label">Choose translation language:</label>
+        <select name="translatedLang" id="translatedLang">
+            <option value="en" disabled selected hidden>Select</option>
+            <option value="as">Assamese</option>
+            <option value="bn">Bengali</option>
+            <option value="gu">Gujarati</option>
+            <option value="hi">Hindi</option>
+            <option value="kn">Kannada</option>
+            <option value="ml">Malayalam</option>
+            <option value="mr">Marathi</option>
+            <option value="ne">Nepali</option>
+            <option value="or">Odia/Oriya</option>
+            <option value="pa">Punjabi</option>
+            <option value="sa">Sanskrit</option>
+            <option value="te">Telugu</option>
+            <option value="ur">Urdu</option>
+        </select>
+  </div>
+  <button id="startRecording">Start Recording</button>
+  <button id="stopRecording" disabled>Stop Recording</button>
+  
+  <p class="spacer" class="status">Status: <span id="instructions">Press the 'Start Recording' button and speak in English.</span>
+  </p>
+  
+  <p class="label">Current Speech:</p>
+  <div id="resultText">&nbsp;</div>
+  <div id="resultTextTrans">&nbsp;</div>
+  <div id="resultSymbol">&nbsp;</div>
+  
+  <p class="label completeSpeech">Complete Speech:</p>
+  <div id="resultTextTot">&nbsp;</div>
+  
+  <div id="resultSymbolTot">&nbsp;</div>
+  <div id="visits-data">
+
+  </div>
+  <script src="script.js"></script>
+
+
+ </div>
+
+</body>
+
+</html>
